@@ -12,6 +12,9 @@ class App extends Component {
     const reactElement = <button>new button</button>;
     const string = 'a string';
     const numbers = [1, 2, 3];
+    console.log(numbers.map((number, key) => (
+      <button key={key}>{number}</button>
+    )))
     const styles = {
       padding: 15,
       backgroundColor: 'yellow',

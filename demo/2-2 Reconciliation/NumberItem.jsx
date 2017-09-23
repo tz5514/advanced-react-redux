@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NumberItem extends Component {
+class NumberItem extends React.PureComponent {
   componentWillUpdate(nextProps, nextState) {
     console.log('NumberItem will redraw', this.props.number, '=>', nextProps.number);
   }
